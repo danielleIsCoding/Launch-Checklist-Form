@@ -14,14 +14,14 @@ window.addEventListener("load", function() {
          event.preventDefault();
       }
 
-      if (!pilotName.value === isNaN(pilotName.value)  || 
-      !copilotName.value === isNaN(copilotName.value)) {
+      if (!isNaN(pilotName.value) || 
+      !isNaN(copilotName.value)) {
          alert("Name is an Invalid Entry!");
          // stop the form submission
          event.preventDefault();
       }
 
-      if (!isNaN(fuelLevel.value)){
+      if (isNaN(fuelLevel.value) || isNaN(cargoMass.value) ){
          alert(" Fuel and Cargo should be a number");
          //stop the form submission
          event.preventDefault();
