@@ -102,7 +102,7 @@ window.addEventListener("load", function() {
                let planet = JSON[i];
                const mission = (planet) => { 
                   return `<div class = "header">
-                              <h2>Mission Destination</h2>
+                           <center>  <h2>Mission Destination</h2>
                               <ol>
                                  <li>Name: ${planet.name}</li>
                                  <li>Diameter: ${planet.diameter}</li>
@@ -110,7 +110,7 @@ window.addEventListener("load", function() {
                                  <li>Distance from Earth: ${planet.distance}</li>
                                  <li>Number of Moons: ${planet.moons}</li>
                               </ol>
-                              <img class = "planetPic" src="${planet.image}"/>
+                              <img class = "planetPic" src="${planet.image}"/></center>
                         </div>`;
                      };
                
