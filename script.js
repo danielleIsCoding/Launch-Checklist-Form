@@ -88,17 +88,16 @@ window.addEventListener("load", function() {
             shuttleNotReady();
          
          }else {
+            //sets shuttle launch status
             shuttleReadyStatus()
             
-            
-     
-
             const missionTarget = document.getElementById("missionTarget");
-            const JSON = fetch("https://handlers.education.launchcode.org/static/planets.json").then( function(response) {
-               response.json().then((JSON) =>{
-               let num = 1
+            const JSON = fetch("https://handlers.education.launchcode.org/static/planets.json").
+            then( function(response) {
+            response.json().then((JSON) =>{
                
-                let i = Math.floor(Math.random()*7);
+               //randomly pics mission location
+               let i = Math.floor(Math.random()*7);
                let planet = JSON[i];
                const mission = (planet) => { 
                   return `<div class = "header">
